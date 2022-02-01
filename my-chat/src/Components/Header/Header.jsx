@@ -7,6 +7,11 @@ const Header = () => {
        <div className="image">
            <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/User_icon-cp.png" alt="icon" width='30px' />
        </div>
+
+       <div className={style.search}>
+           <input type='text'></input>
+           <button>search</button>
+       </div>
         </header>
     )
 }
