@@ -4,25 +4,26 @@ import Header from './Components/Header/Header';
 import Main from './Components/Main/Main';
 import Sidebar from './Components/Sidebar/Sidebar';
 import { BrowserRouter, Route, Routes} from 'react-router-dom'
+import Messenger from './Components/messenger/Messenger';
 
 
 const App = () => {
  return (
    <BrowserRouter>
-  <div className='primary'>
-    <Header />
+ <Messenger/>
+   </BrowserRouter>
+    /* /* <div className='primary'> */
+    /* <Header />
     <Main />
-    <Sidebar />
+    <Sidebar /> */
+    /* <Main /> */
+  /* </div> */ 
 
-    <Main />
-  </div>
-  </BrowserRouter>
  );
 }
-
-
-         
-     
-
-
+      
 export default App;
+
+
+
+ 
