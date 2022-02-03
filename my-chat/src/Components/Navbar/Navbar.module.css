@@ -1,0 +1,13 @@
+.chat {
+    font-size: 30px;
+    color: #4ea5d8;
+    margin-top: 10px;
+    padding: 14px;
+}
+
+.photo img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
