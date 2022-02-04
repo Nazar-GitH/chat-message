@@ -13,8 +13,8 @@ const App = (props) => {
    <>
  <Navbar />
  <Routes>
- <Route path='/Alice' element={ <PageAlice dialogsData2={props.state.dialogsData2}/>} />
- <Route path='/Josefina' element={ <PageJosefina dialogsData={props.state.dialogsData}/>} />
+ <Route path='/Alice' element={ <PageAlice dialogsData2={props.state.dialogsData2} addMessage={props.addMessage}/>} />
+ <Route path='/Josefina' element={ <PageJosefina dialogsData={props.state.dialogsData} addMessage={props.addMessage}/>} />
  <Route path='/Velazquez' element={ <PageVelazquez dialogsData2={props.state.dialogsData2}/>} />
  </Routes>
  </>

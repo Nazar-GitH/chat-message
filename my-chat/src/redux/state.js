@@ -1,3 +1,5 @@
+import { rerenderEntireTree } from "../render"
+
 let state = {
      dialogsData: [
         {src: 'https://s1.1zoom.me/big0/700/Gray_background_Brunette_girl_Hair_Smile_Glance_563423_1280x872.jpg', text: 'You are the worst', data: '1 hour ago' }
@@ -8,6 +10,16 @@ let state = {
      dialogsData3: [
         {src: 'https://media.istockphoto.com/photos/handsome-in-spectacles-picture-id656673020?k=20&m=656673020&s=612x612&w=0&h=kJ5fq_Exi0FG0yw7tqwTdfXuUPBac0o0eH3kSyQyxWs=', text: 'Quickly come to the meeting room 1B', data: '3 hour ago' }
       ]
+}
+
+ export let addMessage = (dialogsData) => {
+  let newMessage = {
+    src: 'https://s1.1zoom.me/big0/700/Gray_background_Brunette_girl_Hair_Smile_Glance_563423_1280x872.jpg',
+    text: dialogsData,
+    data: 0
+  }
+  state.dialogsData.push(newMessage)
+  rerenderEntireTree(state)
 }
 
 export default state

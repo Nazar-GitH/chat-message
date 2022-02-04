@@ -8,7 +8,8 @@ export default function PageAlice(props) {
 
     let addMessage = () => {
         let text = newMessageText.current.value
-        alert(text)
+        props.addMessage(text)
+        newMessageText.current.value = ''
 
     }
     return (
@@ -21,9 +22,7 @@ export default function PageAlice(props) {
                 <div className={style.chatBox}>
                     <div className={style.chatBoxWrapper}>
                         <div className={style.chatBoxTop}>
-                            <JosefinaMessage dialogsData2={props.dialogsData2}/>
-                            <JosefinaMessage dialogsData2={props.dialogsData2}/>
-                            <JosefinaMessage dialogsData2={props.dialogsData2}/>
+                            <JosefinaMessage dialogsData2={props.dialogsData2} addMessage={addMessage}/>
                         </div>
                         <div className={style.chatBoxBottom}></div>
                         <textarea ref= {newMessageText} className={style.chatMessageInput} placeholder="Type your message"></textarea>
