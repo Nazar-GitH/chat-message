@@ -3,6 +3,14 @@ import JosefinaMessage from "../../Josefina/JosefinaMessage/JosefinaMessage";
 import style from './PageAlice.module.css'
 
 export default function PageAlice(props) {
+
+    let newMessageText = React.useRef();
+
+    let addMessage = () => {
+        let text = newMessageText.current.value
+        alert(text)
+
+    }
     return (
         <>
             <div className={style.messenger}>
@@ -18,8 +26,8 @@ export default function PageAlice(props) {
                             <JosefinaMessage dialogsData2={props.dialogsData2}/>
                         </div>
                         <div className={style.chatBoxBottom}></div>
-                        <textarea className={style.chatMessageInput} placeholder="Type your message"></textarea>
-                        <button className={style.chatSubmitButton}>Send</button>
+                        <textarea ref= {newMessageText} className={style.chatMessageInput} placeholder="Type your message"></textarea>
+                        <button onClick= {addMessage} className={style.chatSubmitButton}>Send</button>
                     </div>
                 </div>
 
