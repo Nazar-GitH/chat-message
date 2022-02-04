@@ -14,12 +14,12 @@ let state = {
 
  export let addMessage = (dialogsData) => {
   let newMessage = {
-    src: 'https://s1.1zoom.me/big0/700/Gray_background_Brunette_girl_Hair_Smile_Glance_563423_1280x872.jpg',
+    src: "https://media.istockphoto.com/photos/real-woman-picture-id1198027123?b=1&k=20&m=1198027123&s=170667a&w=0&h=aXmAB1C93akXzJlXQx6ldCVT3I3nUReQHT-myoCxmCI=" ,
     text: dialogsData,
     data: 0
   }
   state.dialogsData.push(newMessage)
   rerenderEntireTree(state)
 }
-
+  
 export default state

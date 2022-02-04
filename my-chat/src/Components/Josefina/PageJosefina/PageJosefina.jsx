@@ -10,7 +10,10 @@ export default function PageJosefina(props) {
         let text = newMessageText.current.value
         props.addMessage(text)
         newMessageText.current.value = ''
+    }
 
+    let onPostChange = () => {
+        let text = newMessageText.current.value
     }
     return (
         <>
@@ -25,7 +28,7 @@ export default function PageJosefina(props) {
                     <AliceMessage dialogsData={props.dialogsData} addMessage={props.addMessage} />
                 </div>
                 <div className={style.chatBoxBottom}></div>
-                <textarea ref= {newMessageText} className={style.chatMessageInput} placeholder="Type your message"></textarea>
+                <textarea onChange={onPostChange} ref= {newMessageText} className={style.chatMessageInput} value={props.newMessageText} placeholder="Type your message"></textarea>
                 <button onClick= {addMessage} className={style.chatSubmitButton}>Send</button>
             </div>
             </div>
