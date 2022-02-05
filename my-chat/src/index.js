@@ -1,5 +1,5 @@
 import reportWebVitals from './reportWebVitals';
-import state, { subscribe } from './redux/state';
+import state, { addMessage2, addMessage3, subscribe } from './redux/state';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -12,7 +12,7 @@ let rerenderEntireTree = (state) => {
     ReactDOM.render(
         <BrowserRouter>
             <React.StrictMode>
-                <App state={state} addMessage={addMessage} />
+                <App state={state} addMessage={addMessage} addMessage2={addMessage2} addMessage3={addMessage3}/>
             </React.StrictMode>
         </BrowserRouter>,
         document.getElementById('root')
