@@ -30,8 +30,8 @@ chatBox{
 }
 
 .chatSubmitButton{
-    width: 70px;
-    height: 40px;
+    width: 60px;
+    height: 35px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -56,4 +56,9 @@ chatBox{
     height: 100px;
     overflow-y: scroll;
     padding-right: 10px;
+}
+
+.chatMessageInput{
+    border-radius: 20px;
+    height: 40px;
 }

@@ -17,13 +17,13 @@
 
 .photo {
     background-color: #ccccce;
-    width: 300px;
+    width: 250px;
     height: 100px;
     background-size: inherit
 }
 
 .chatMenuInput {
-    width: 300px;
+    width: 250px;
     height: 33px;
     border-radius: 20px;
 }
