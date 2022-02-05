@@ -18,7 +18,7 @@ const Navbar = () => {
                         </div>
                         <input placeholder="Search or start new chat" className={style.chatMenuInput} />
              <div className={style.item}>
-             <NavLink to='/Alice'>{<Alice />}</NavLink>
+             <NavLink to='/Alice'>{<Alice />} </NavLink>
              </div>
              <div className={style.item}>
              <NavLink to='/Josefina'>{<Josefina />}</NavLink>
@@ -26,7 +26,7 @@ const Navbar = () => {
              <div className={style.item}>
              <NavLink to='/Velazquez'>{<Velazquez />}</NavLink>
              </div>
-         </div>
+         </div >
     )
 }
 
