@@ -1,5 +1,3 @@
-
-
 let store = {
   state: {
     dialogsData: [
